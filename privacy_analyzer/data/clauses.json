@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Data Collection",
+    "keywords": ["collect", "gather", "obtain", "personal data", "personal information", "data we collect"],
+    "required": true
+  },
+  {
+    "name": "Data Usage",
+    "keywords": ["use your data", "how we use", "purpose of processing", "data usage", "use of information"],
+    "required": true
+  },
+  {
+    "name": "Third-Party Sharing",
+    "keywords": ["third party", "third-party", "share your data", "disclose", "sharing of information", "service providers"],
+    "required": true
+  },
+  {
+    "name": "Cookies",
+    "keywords": ["cookie", "cookies", "tracking technologies", "web beacons", "local storage"],
+    "required": true
+  },
+  {
+    "name": "User Rights",
+    "keywords": ["your rights", "right to access", "right to delete", "right to rectification", "opt out", "opt-out", "data subject rights"],
+    "required": true
+  },
+  {
+    "name": "Data Retention",
+    "keywords": ["retention", "how long we keep", "data retention", "storage period", "retain your data"],
+    "required": true
+  },
+  {
+    "name": "Security Measures",
+    "keywords": ["security", "protect", "encryption", "safeguard", "security measures", "data protection"],
+    "required": true
+  },
+  {
+    "name": "Contact Information",
+    "keywords": ["contact us", "contact information", "reach us", "data protection officer", "dpo", "email us"],
+    "required": true
+  },
+  {
+    "name": "Consent",
+    "keywords": ["consent", "agree", "opt-in", "your consent", "withdraw consent"],
+    "required": true
+  },
+  {
+    "name": "Children's Privacy",
+    "keywords": ["children", "minors", "under 13", "under 16", "child", "coppa", "children's privacy"],
+    "required": false
+  }
+]
