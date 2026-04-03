@@ -28,10 +28,14 @@ def analyze_privacy_policy(policy_text: str) -> dict:
         )
 
     clause_results = check_compliance(text)
+    missing_clauses = [
+        c["clause"] for c in clause_results if not c["present"]
+    ]
     llm_analysis = analyze_with_llm(text, clause_results)
 
     return {
         "clauses": clause_results,
+        "missing_clauses": missing_clauses,
         "risk_score": llm_analysis["risk_score"],
         "issues": llm_analysis["issues"],
         "summary": llm_analysis["summary"],
