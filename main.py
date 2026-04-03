@@ -1,6 +1,9 @@
 """API entry point for the Privacy Policy Compliance Analyzer."""
 
+import traceback
+
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, field_validator
 
 from privacy_analyzer.analyzer import analyze_privacy_policy
@@ -9,6 +12,14 @@ app = FastAPI(
     title="Privacy Policy Compliance Analyzer",
     version="1.0.0",
 )
+
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request, exc):
+    return JSONResponse(
+        status_code=500,
+        content={"error": str(exc), "trace": traceback.format_exc()},
+    )
 
 
 class PolicyRequest(BaseModel):
