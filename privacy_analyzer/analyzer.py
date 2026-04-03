@@ -12,7 +12,7 @@ def analyze_privacy_policy(policy_text: str) -> dict:
         policy_text: The full text of a website's privacy policy.
 
     Returns:
-        Dict with clauses, risk_score, issues, and summary.
+        Dict with clauses, missing_clauses, risk_score, issues, and summary.
 
     Raises:
         ValueError: If policy_text is empty or too short.
@@ -28,9 +28,7 @@ def analyze_privacy_policy(policy_text: str) -> dict:
         )
 
     clause_results = check_compliance(text)
-    missing_clauses = [
-        c["clause"] for c in clause_results if not c["present"]
-    ]
+    missing_clauses = [c["clause"] for c in clause_results if not c["present"]]
     llm_analysis = analyze_with_llm(text, clause_results)
 
     return {

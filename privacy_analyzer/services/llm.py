@@ -1,7 +1,5 @@
 """Mock LLM service for privacy policy risk analysis."""
 
-from pathlib import Path
-
 from ..config import (
     BASE_RISK_SCORE,
     MAX_RISK_SCORE,
@@ -9,13 +7,6 @@ from ..config import (
     MISSING_OPTIONAL_CLAUSE_PENALTY,
     MISSING_REQUIRED_CLAUSE_PENALTY,
 )
-
-
-def _load_prompt_template() -> str:
-    """Load the prompt template from disk."""
-    prompt_path = Path(__file__).resolve().parent.parent / "prompts" / "privacy_prompt.txt"
-    with open(prompt_path, "r", encoding="utf-8") as f:
-        return f.read()
 
 
 def _compute_risk_score(clause_results: list[dict]) -> int:
@@ -38,11 +29,14 @@ def _identify_issues(clause_results: list[dict]) -> list[str]:
 
     for clause in clause_results:
         if not clause["present"] and clause["required"]:
-            issues.append(f"Missing required clause: {clause['clause']}")
+            issues.append(
+                f"[{clause['requirement_level']}] Missing: {clause['clause']}"
+            )
 
     for clause in clause_results:
         if not clause["present"] and not clause["required"]:
-            issues.append(f"Missing optional clause: {clause['clause']}")
+            level = clause.get("requirement_level", "OPTIONAL")
+            issues.append(f"[{level}] Missing: {clause['clause']}")
 
     return issues
 
@@ -72,8 +66,8 @@ def _generate_summary(clause_results: list[dict], risk_score: int) -> str:
 def analyze_with_llm(policy_text: str, clause_results: list[dict]) -> dict:
     """Mock LLM analysis of privacy policy compliance.
 
-    In production, this would format the prompt template with the inputs
-    and call an actual LLM API. For now it uses rule-based logic.
+    In production, this would call an actual LLM API.
+    For now it uses rule-based scoring logic.
 
     Args:
         policy_text: The full privacy policy text.
@@ -82,9 +76,6 @@ def analyze_with_llm(policy_text: str, clause_results: list[dict]) -> dict:
     Returns:
         Dict with risk_score, issues list, and summary string.
     """
-    # Load template to validate it exists (used in production path)
-    _load_prompt_template()
-
     risk_score = _compute_risk_score(clause_results)
     issues = _identify_issues(clause_results)
     summary = _generate_summary(clause_results, risk_score)
