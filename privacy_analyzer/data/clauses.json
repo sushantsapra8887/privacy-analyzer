@@ -1,52 +1,490 @@
-[
-  {
-    "name": "Data Collection",
-    "keywords": ["collect", "gather", "obtain", "personal data", "personal information", "data we collect"],
-    "required": true
-  },
-  {
-    "name": "Data Usage",
-    "keywords": ["use your data", "how we use", "purpose of processing", "data usage", "use of information"],
-    "required": true
-  },
-  {
-    "name": "Third-Party Sharing",
-    "keywords": ["third party", "third-party", "share your data", "disclose", "sharing of information", "service providers"],
-    "required": true
-  },
-  {
-    "name": "Cookies",
-    "keywords": ["cookie", "cookies", "tracking technologies", "web beacons", "local storage"],
-    "required": true
-  },
-  {
-    "name": "User Rights",
-    "keywords": ["your rights", "right to access", "right to delete", "right to rectification", "opt out", "opt-out", "data subject rights"],
-    "required": true
-  },
-  {
-    "name": "Data Retention",
-    "keywords": ["retention", "how long we keep", "data retention", "storage period", "retain your data"],
-    "required": true
-  },
-  {
-    "name": "Security Measures",
-    "keywords": ["security", "protect", "encryption", "safeguard", "security measures", "data protection"],
-    "required": true
-  },
-  {
-    "name": "Contact Information",
-    "keywords": ["contact us", "contact information", "reach us", "data protection officer", "dpo", "email us"],
-    "required": true
-  },
-  {
-    "name": "Consent",
-    "keywords": ["consent", "agree", "opt-in", "your consent", "withdraw consent"],
-    "required": true
-  },
-  {
-    "name": "Children's Privacy",
-    "keywords": ["children", "minors", "under 13", "under 16", "child", "coppa", "children's privacy"],
-    "required": false
-  }
-]
+{
+  "title": "Mandatory Privacy Policy Clauses — DPDP Act 2023 + Rules 2025 + IT Act",
+  "total_clauses": 44,
+  "clauses": [
+    {
+      "s_no": 1,
+      "section_code": "A",
+      "section_title": "Identity & Contact Information of Data Fiduciary",
+      "clause_category": "Identity",
+      "mandatory_clause": "Name and legal identity of the Data Fiduciary (company name, registration details)",
+      "dpdp_source": "Sec 5(1) + Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check if company/organization name is mentioned in privacy policy",
+      "sample_language": "[Company Name] ('we', 'our', 'us') is the Data Fiduciary responsible for processing your personal data under the Digital Personal Data Protection Act, 2023."
+    },
+    {
+      "s_no": 2,
+      "section_code": "A",
+      "section_title": "Identity & Contact Information of Data Fiduciary",
+      "clause_category": "Contact",
+      "mandatory_clause": "Contact details of the Data Fiduciary — email, phone, address",
+      "dpdp_source": "Sec 5(1) + Rule 9",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for email address, phone number, or physical address in privacy/contact section",
+      "sample_language": "For questions about this Privacy Policy, contact us at: [Email] | [Phone] | [Address]"
+    },
+    {
+      "s_no": 3,
+      "section_code": "A",
+      "section_title": "Identity & Contact Information of Data Fiduciary",
+      "clause_category": "DPO/Grievance Officer",
+      "mandatory_clause": "Name and contact details of Data Protection Officer (if SDF) or Grievance Officer",
+      "dpdp_source": "Sec 8(7) + Sec 10(2) + Rule 9",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'grievance officer', 'DPO', 'data protection officer' with name and contact details",
+      "sample_language": "Grievance Officer: [Name], Email: [email], Phone: [phone]. You may contact our Grievance Officer for any concerns regarding your personal data."
+    },
+    {
+      "s_no": 4,
+      "section_code": "A",
+      "section_title": "Identity & Contact Information of Data Fiduciary",
+      "clause_category": "DPB Complaint",
+      "mandatory_clause": "Information on how to file a complaint with the Data Protection Board of India",
+      "dpdp_source": "Sec 5(1) + Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'Data Protection Board', 'DPB', 'complaint', 'Board' with reference to filing process",
+      "sample_language": "If you are not satisfied with our response, you have the right to file a complaint with the Data Protection Board of India as per Section 13 of the DPDP Act, 2023."
+    },
+    {
+      "s_no": 5,
+      "section_code": "B",
+      "section_title": "Personal Data Collected — Itemised Description",
+      "clause_category": "Data Categories",
+      "mandatory_clause": "ITEMISED list of all categories of personal data collected (name, email, phone, address, payment info, etc.)",
+      "dpdp_source": "Sec 5(1)(a) + Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for specific data types listed — 'name', 'email', 'phone', 'address', 'payment', 'location', etc.",
+      "sample_language": "We collect the following personal data: (a) Name, (b) Email address, (c) Phone number, (d) Postal address, (e) Payment information, (f) Device information, (g) Usage data, (h) [Add specific categories]."
+    },
+    {
+      "s_no": 6,
+      "section_code": "B",
+      "section_title": "Personal Data Collected — Itemised Description",
+      "clause_category": "Collection Method",
+      "mandatory_clause": "How personal data is collected — forms, cookies, third-party sources, automatic collection",
+      "dpdp_source": "Rule 3",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for descriptions of collection methods — 'forms', 'cookies', 'automatically', 'third party'",
+      "sample_language": "We collect your personal data through: (a) Forms you fill on our website/app, (b) Cookies and tracking technologies, (c) Third-party services, (d) Automatic collection when you use our platform."
+    },
+    {
+      "s_no": 7,
+      "section_code": "B",
+      "section_title": "Personal Data Collected — Itemised Description",
+      "clause_category": "Children's Data",
+      "mandatory_clause": "Specific disclosure if children's data (under 18) is collected, including parental consent mechanism",
+      "dpdp_source": "Sec 9(1) + Rule 10",
+      "requirement_level": "CONDITIONAL",
+      "scanner_check": "Check for 'children', 'minor', 'under 18', 'parental consent', 'age verification'",
+      "sample_language": "We do not knowingly collect personal data from children under 18 years of age without verifiable parental consent. If we become aware that we have collected data from a child without parental consent, we will delete it immediately."
+    },
+    {
+      "s_no": 8,
+      "section_code": "B",
+      "section_title": "Personal Data Collected — Itemised Description",
+      "clause_category": "Sensitive Data",
+      "mandatory_clause": "Disclosure if sensitive categories are processed — health, financial, biometric, sexual orientation, political opinion",
+      "dpdp_source": "IT Act SPDI Rules (still applicable for sensitive data)",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'sensitive', 'health', 'financial', 'biometric', 'medical'",
+      "sample_language": "We may process the following categories of sensitive personal data: [health records / financial data / biometric data]. Such data is processed with additional safeguards as required by law."
+    },
+    {
+      "s_no": 9,
+      "section_code": "B",
+      "section_title": "Personal Data Collected — Itemised Description",
+      "clause_category": "Data Minimisation",
+      "mandatory_clause": "Statement that only necessary data is collected for the specified purpose",
+      "dpdp_source": "Sec 4 + Sec 6(1)",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'necessary', 'minimum', 'only collect', 'limited to', 'required for'",
+      "sample_language": "We collect only the personal data that is necessary for the purposes specified in this policy. We do not collect data 'just in case' or for unspecified future use."
+    },
+    {
+      "s_no": 10,
+      "section_code": "C",
+      "section_title": "Purpose of Processing — Specified Description",
+      "clause_category": "Specified Purposes",
+      "mandatory_clause": "Specific, clearly stated purposes for which each type of personal data is processed",
+      "dpdp_source": "Sec 5(1)(b) + Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for purpose statements linked to data types — 'we use your [data] for [purpose]'",
+      "sample_language": "We process your personal data for the following specific purposes: (a) Email — to send account verification and service communications, (b) Phone number — to enable two-factor authentication, (c) Address — to deliver products, (d) Payment info — to process transactions."
+    },
+    {
+      "s_no": 11,
+      "section_code": "C",
+      "section_title": "Purpose of Processing — Specified Description",
+      "clause_category": "Linked to Goods/Services",
+      "mandatory_clause": "Purpose must describe the goods, services, or uses enabled by the processing",
+      "dpdp_source": "Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check if purposes are linked to specific services/products, not vague statements",
+      "sample_language": "Each purpose of processing is directly linked to the goods and services we provide: [describe specific services enabled by data processing]."
+    },
+    {
+      "s_no": 12,
+      "section_code": "C",
+      "section_title": "Purpose of Processing — Specified Description",
+      "clause_category": "No Secondary Use",
+      "mandatory_clause": "Statement that data will not be used for purposes beyond what was consented to",
+      "dpdp_source": "Sec 6(1) + Sec 4",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'will not use for other purposes', 'limited to', 'only for the stated purpose'",
+      "sample_language": "We will not process your personal data for any purpose other than those specified in this notice at the time of collection, unless we obtain your separate consent."
+    },
+    {
+      "s_no": 13,
+      "section_code": "C",
+      "section_title": "Purpose of Processing — Specified Description",
+      "clause_category": "Legitimate Uses",
+      "mandatory_clause": "If processing without consent under Section 7, clearly state which legitimate use applies",
+      "dpdp_source": "Sec 7 + Rule 5",
+      "requirement_level": "CONDITIONAL",
+      "scanner_check": "Check for references to 'legitimate use', 'Section 7', 'without consent', 'employment', 'legal obligation'",
+      "sample_language": "In certain cases, we may process your personal data without explicit consent where permitted under Section 7 of the DPDP Act, including: (a) performance of employment obligations, (b) compliance with legal requirements, (c) medical emergencies."
+    },
+    {
+      "s_no": 14,
+      "section_code": "D",
+      "section_title": "Consent Mechanism & Withdrawal",
+      "clause_category": "Consent Basis",
+      "mandatory_clause": "Clear statement that processing is based on free, specific, informed, unconditional consent",
+      "dpdp_source": "Sec 6(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'consent', 'free', 'specific', 'informed', 'unconditional'",
+      "sample_language": "We process your personal data based on your free, specific, informed, and unconditional consent as required under Section 6 of the DPDP Act, 2023."
+    },
+    {
+      "s_no": 15,
+      "section_code": "D",
+      "section_title": "Consent Mechanism & Withdrawal",
+      "clause_category": "Withdrawal Right",
+      "mandatory_clause": "Clear statement of right to withdraw consent at any time",
+      "dpdp_source": "Sec 6(3) + Sec 6(4)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'withdraw consent', 'revoke consent', 'right to withdraw'",
+      "sample_language": "You have the right to withdraw your consent at any time. Withdrawal of consent shall be as easy as giving consent."
+    },
+    {
+      "s_no": 16,
+      "section_code": "D",
+      "section_title": "Consent Mechanism & Withdrawal",
+      "clause_category": "Withdrawal Method",
+      "mandatory_clause": "SPECIFIC communication link or method to withdraw consent — must be as easy as giving consent",
+      "dpdp_source": "Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for clickable link, email, or clear steps for consent withdrawal",
+      "sample_language": "To withdraw your consent: [Click here / Go to Settings > Privacy > Withdraw Consent / Email us at privacy@company.com]. The process is designed to be as simple as the original consent."
+    },
+    {
+      "s_no": 17,
+      "section_code": "D",
+      "section_title": "Consent Mechanism & Withdrawal",
+      "clause_category": "Consequences of Withdrawal",
+      "mandatory_clause": "What happens when consent is withdrawn — service limitations, data deletion timeline",
+      "dpdp_source": "Sec 6(4) + Sec 8(5)",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'consequences', 'if you withdraw', 'will stop processing', 'delete your data'",
+      "sample_language": "If you withdraw your consent: (a) We will stop processing your personal data for the specified purpose, (b) We will erase your data unless retention is required by law, (c) Certain services may no longer be available to you."
+    },
+    {
+      "s_no": 18,
+      "section_code": "D",
+      "section_title": "Consent Mechanism & Withdrawal",
+      "clause_category": "Granular Consent",
+      "mandatory_clause": "Consent must be purpose-specific — separate consent for each distinct purpose, no bundling",
+      "dpdp_source": "Sec 6(1) + Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check if consent is separated by purpose, not a single 'I agree to everything' checkbox",
+      "sample_language": "We request your consent separately for each purpose: (a) Service delivery [Required], (b) Marketing communications [Optional], (c) Analytics [Optional]. You may consent to some purposes and not others."
+    },
+    {
+      "s_no": 19,
+      "section_code": "E",
+      "section_title": "Data Principal Rights",
+      "clause_category": "Right to Access",
+      "mandatory_clause": "Right to obtain summary of personal data and processing activities",
+      "dpdp_source": "Sec 11(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'right to access', 'request your data', 'summary of data', 'access information'",
+      "sample_language": "You have the right to request: (a) A summary of all personal data we hold about you, (b) Details of our processing activities, (c) The identities of all entities we have shared your data with."
+    },
+    {
+      "s_no": 20,
+      "section_code": "E",
+      "section_title": "Data Principal Rights",
+      "clause_category": "Right to Correction",
+      "mandatory_clause": "Right to request correction of inaccurate or misleading personal data",
+      "dpdp_source": "Sec 12(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'right to correct', 'correction', 'update your data', 'rectification'",
+      "sample_language": "You have the right to request correction of any inaccurate, incomplete, or misleading personal data we hold about you."
+    },
+    {
+      "s_no": 21,
+      "section_code": "E",
+      "section_title": "Data Principal Rights",
+      "clause_category": "Right to Erasure",
+      "mandatory_clause": "Right to request deletion of personal data",
+      "dpdp_source": "Sec 12(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'right to erasure', 'right to delete', 'deletion', 'erase your data'",
+      "sample_language": "You have the right to request erasure of your personal data, subject to any legal retention obligations."
+    },
+    {
+      "s_no": 22,
+      "section_code": "E",
+      "section_title": "Data Principal Rights",
+      "clause_category": "Right to Grievance",
+      "mandatory_clause": "Right to grievance redressal — process, officer, timeline",
+      "dpdp_source": "Sec 13(1) + Rule 14",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'grievance', 'complaint', 'grievance redressal', 'response time'",
+      "sample_language": "If you have a grievance regarding our processing of your personal data, you may contact our Grievance Officer at [contact]. We will respond within [X] days."
+    },
+    {
+      "s_no": 23,
+      "section_code": "E",
+      "section_title": "Data Principal Rights",
+      "clause_category": "Right to Nominate",
+      "mandatory_clause": "Right to nominate a person to exercise rights in case of death or incapacity",
+      "dpdp_source": "Sec 14",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'nominate', 'nomination', 'death', 'incapacity'",
+      "sample_language": "You have the right to nominate another individual who may exercise your rights under this Act in the event of your death or incapacity."
+    },
+    {
+      "s_no": 24,
+      "section_code": "E",
+      "section_title": "Data Principal Rights",
+      "clause_category": "How to Exercise Rights",
+      "mandatory_clause": "Specific method/link for exercising rights — steps, verification, timeline",
+      "dpdp_source": "Rule 14",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for link/email/form for submitting data requests + verification requirements + response timeline",
+      "sample_language": "To exercise any of your rights, please [submit a request at link / email privacy@company.com / visit Settings > Your Data]. We will verify your identity and respond within [X] days."
+    },
+    {
+      "s_no": 25,
+      "section_code": "F",
+      "section_title": "Data Sharing & Third-Party Processors",
+      "clause_category": "Processor Disclosure",
+      "mandatory_clause": "Identities of all Data Processors who process data on behalf of the Fiduciary",
+      "dpdp_source": "Sec 8(1) + Sec 11(1)(b)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for list of third parties, processors, vendors, partners who receive data",
+      "sample_language": "We share your personal data with the following Data Processors: (a) [Cloud provider — hosting], (b) [Payment gateway — payment processing], (c) [Analytics tool — usage analysis], (d) [Email service — communications]."
+    },
+    {
+      "s_no": 26,
+      "section_code": "F",
+      "section_title": "Data Sharing & Third-Party Processors",
+      "clause_category": "Sharing Purpose",
+      "mandatory_clause": "Purpose for which data is shared with each third party",
+      "dpdp_source": "Sec 5(1) + Rule 3",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check if each third-party disclosure includes the reason for sharing",
+      "sample_language": "Each third-party Data Processor receives only the data necessary for their specific function and is contractually bound to process it solely for the purpose specified."
+    },
+    {
+      "s_no": 27,
+      "section_code": "F",
+      "section_title": "Data Sharing & Third-Party Processors",
+      "clause_category": "Contractual Safeguards",
+      "mandatory_clause": "Statement that processors are bound by contracts with equivalent security safeguards",
+      "dpdp_source": "Sec 8(1) + Rule 6(2)",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'contract', 'agreement', 'bound by', 'data processing agreement'",
+      "sample_language": "All Data Processors engaged by us are bound by Data Processing Agreements that mandate equivalent security safeguards including encryption, access controls, and breach notification obligations."
+    },
+    {
+      "s_no": 28,
+      "section_code": "F",
+      "section_title": "Data Sharing & Third-Party Processors",
+      "clause_category": "Cross-Border Transfer",
+      "mandatory_clause": "Disclosure if personal data is transferred outside India + legal basis",
+      "dpdp_source": "Sec 16 + Rule 15",
+      "requirement_level": "CONDITIONAL",
+      "scanner_check": "Check for 'transfer outside India', 'cross-border', 'international transfer', 'stored outside'",
+      "sample_language": "Your personal data may be transferred to and processed in countries outside India: [list countries/regions]. Such transfers are made in compliance with Section 16 of the DPDP Act and are not made to countries restricted by the Central Government."
+    },
+    {
+      "s_no": 29,
+      "section_code": "G",
+      "section_title": "Security Safeguards & Breach Notification",
+      "clause_category": "Security Measures",
+      "mandatory_clause": "Description of reasonable security safeguards implemented — encryption, access controls, etc.",
+      "dpdp_source": "Sec 8(4) + Rule 6(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'encryption', 'security', 'safeguards', 'access controls', 'protection'",
+      "sample_language": "We implement reasonable security safeguards to protect your personal data, including: (a) Encryption at rest and in transit, (b) Role-based access controls, (c) Regular security audits, (d) Logging and monitoring of data access, (e) Business continuity measures."
+    },
+    {
+      "s_no": 30,
+      "section_code": "G",
+      "section_title": "Security Safeguards & Breach Notification",
+      "clause_category": "Breach Notification",
+      "mandatory_clause": "Commitment to notify Data Principals and DPB of any personal data breach",
+      "dpdp_source": "Sec 8(6) + Rule 7",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'breach', 'notify', 'notification', 'data breach', 'incident'",
+      "sample_language": "In the event of a personal data breach, we will: (a) Notify the Data Protection Board of India without delay and submit a detailed report within 72 hours, (b) Notify affected Data Principals without delay with details of the breach, its consequences, and mitigation measures."
+    },
+    {
+      "s_no": 31,
+      "section_code": "G",
+      "section_title": "Security Safeguards & Breach Notification",
+      "clause_category": "Breach Contents",
+      "mandatory_clause": "Breach notification must include: nature, consequences, mitigation steps, contact for follow-up",
+      "dpdp_source": "Rule 7",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check if breach notification section mentions nature/consequences/mitigation/contact",
+      "sample_language": "Our breach notification to you will include: (a) Nature of the breach, (b) Potential consequences, (c) Steps we have taken to mitigate the breach, (d) Contact details for further information."
+    },
+    {
+      "s_no": 32,
+      "section_code": "G",
+      "section_title": "Security Safeguards & Breach Notification",
+      "clause_category": "No Cover-Up",
+      "mandatory_clause": "Implied commitment to transparency — no suppression of breach information",
+      "dpdp_source": "Sec 8(6) + Schedule",
+      "requirement_level": "RECOMMENDED",
+      "scanner_check": "Check for transparency commitments around breach reporting",
+      "sample_language": "We are committed to transparency. We will never suppress or delay notification of a personal data breach. Failure to report carries penalties up to ₹200 Crore under the DPDP Act."
+    },
+    {
+      "s_no": 33,
+      "section_code": "H",
+      "section_title": "Data Retention & Erasure",
+      "clause_category": "Retention Period",
+      "mandatory_clause": "Specific retention periods for each category of personal data + legal basis for retention",
+      "dpdp_source": "Sec 8(5) + Rule 8",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'retention', 'how long', 'keep your data', 'storage period', 'delete after'",
+      "sample_language": "We retain your personal data only for as long as necessary for the specified purpose: (a) Account data — duration of account + 1 year, (b) Transaction data — as required by tax law (currently 7 years), (c) Communication data — 1 year after last interaction."
+    },
+    {
+      "s_no": 34,
+      "section_code": "H",
+      "section_title": "Data Retention & Erasure",
+      "clause_category": "Minimum Retention",
+      "mandatory_clause": "Minimum 1-year retention of data + logs for security/investigation purposes",
+      "dpdp_source": "Rule 6(3) + Rule 8",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for '1 year', 'one year', 'minimum retention', 'log retention'",
+      "sample_language": "We retain system logs, processing records, and associated traffic data for a minimum period of one year for detection, investigation, and remediation of security incidents as required by DPDP Rules."
+    },
+    {
+      "s_no": 35,
+      "section_code": "H",
+      "section_title": "Data Retention & Erasure",
+      "clause_category": "Erasure Triggers",
+      "mandatory_clause": "When data will be erased — purpose served, consent withdrawn, account deleted",
+      "dpdp_source": "Sec 8(5) + Rule 8",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'erase', 'delete', 'remove', triggers for deletion",
+      "sample_language": "Your personal data will be erased when: (a) The specified purpose is no longer served, (b) You withdraw your consent, (c) You request deletion, (d) Your account is inactive beyond the prescribed period — unless retention is required by law."
+    },
+    {
+      "s_no": 36,
+      "section_code": "H",
+      "section_title": "Data Retention & Erasure",
+      "clause_category": "Processor Erasure",
+      "mandatory_clause": "Statement that Data Processors will also be instructed to erase data",
+      "dpdp_source": "Sec 8(1) + Rule 8",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'processors will delete', 'instruct processors to erase'",
+      "sample_language": "Upon erasure, we will instruct all Data Processors to whom your data was shared to delete your personal data from their systems as well."
+    },
+    {
+      "s_no": 37,
+      "section_code": "I",
+      "section_title": "Cookies & Tracking Technologies",
+      "clause_category": "Cookie Disclosure",
+      "mandatory_clause": "What cookies and tracking technologies are used + their purpose",
+      "dpdp_source": "Sec 5 + Sec 6(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for 'cookies', 'tracking', 'analytics', 'pixel', 'beacon'",
+      "sample_language": "We use the following cookies and tracking technologies: (a) Essential cookies — required for website functionality, (b) Analytics cookies — [Google Analytics / Mixpanel] to understand usage patterns, (c) Marketing cookies — [specify] for advertising purposes."
+    },
+    {
+      "s_no": 38,
+      "section_code": "I",
+      "section_title": "Cookies & Tracking Technologies",
+      "clause_category": "Third-Party Trackers",
+      "mandatory_clause": "List of all third-party tracking services with their purpose",
+      "dpdp_source": "Sec 5 + Rule 3",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check if all third-party trackers (GA, FB Pixel, etc.) are listed by name",
+      "sample_language": "The following third-party services may collect data through our platform: (a) Google Analytics — usage analytics, (b) [Facebook Pixel — ad conversion tracking], (c) [Hotjar — user behavior analysis]. Each operates under their own privacy policy."
+    },
+    {
+      "s_no": 39,
+      "section_code": "I",
+      "section_title": "Cookies & Tracking Technologies",
+      "clause_category": "Cookie Consent",
+      "mandatory_clause": "Consent mechanism for non-essential cookies — must be opt-in, not opt-out",
+      "dpdp_source": "Sec 6(1)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for cookie consent banner/mechanism that allows user to accept/reject non-essential cookies",
+      "sample_language": "Non-essential cookies are only placed with your explicit consent. You may manage your cookie preferences at any time via [Cookie Settings link]. Essential cookies required for basic functionality do not require consent."
+    },
+    {
+      "s_no": 40,
+      "section_code": "J",
+      "section_title": "Language, Format & Accessibility",
+      "clause_category": "Plain Language",
+      "mandatory_clause": "Privacy notice must be in clear, plain language — not legal jargon",
+      "dpdp_source": "Sec 5(1) + Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check readability — presence of complex legal terms without explanation, sentence length",
+      "sample_language": "[Meta-requirement: The entire privacy policy must be written in clear, plain language that an average person can understand without legal training.]"
+    },
+    {
+      "s_no": 41,
+      "section_code": "J",
+      "section_title": "Language, Format & Accessibility",
+      "clause_category": "Multi-Language",
+      "mandatory_clause": "Available in English + any of the 22 Eighth Schedule languages",
+      "dpdp_source": "Sec 5(3)",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check for language toggle or availability in Hindi/regional languages",
+      "sample_language": "This Privacy Policy is available in English and [Hindi / other scheduled languages]. [Language toggle link]"
+    },
+    {
+      "s_no": 42,
+      "section_code": "J",
+      "section_title": "Language, Format & Accessibility",
+      "clause_category": "Standalone Notice",
+      "mandatory_clause": "Privacy notice must be independent and understandable on its own — NOT buried in Terms & Conditions",
+      "dpdp_source": "Rule 3",
+      "requirement_level": "MANDATORY",
+      "scanner_check": "Check if privacy notice is a separate page/section, not embedded within T&C",
+      "sample_language": "[Meta-requirement: This privacy policy must be presented as a standalone document, separate from Terms of Service, and independently accessible.]"
+    },
+    {
+      "s_no": 43,
+      "section_code": "K",
+      "section_title": "Updates, Versioning & Effective Date",
+      "clause_category": "Effective Date",
+      "mandatory_clause": "Date the privacy policy was last updated / became effective",
+      "dpdp_source": "General requirement",
+      "requirement_level": "REQUIRED",
+      "scanner_check": "Check for 'last updated', 'effective date', date at top or bottom of policy",
+      "sample_language": "Last Updated: [Date]. This Privacy Policy is effective as of [Date]."
+    },
+    {
+      "s_no": 44,
+      "section_code": "K",
+      "section_title": "Updates, Versioning & Effective Date",
+      "clause_category": "Change Notification",
+      "mandatory_clause": "How users will be notified of changes to the privacy policy",
+      "dpdp_source": "General requirement",
+      "requirement_level": "RECOMMENDED",
+      "scanner_check": "Check for 'notify you of changes', 'update this policy', 'revised policy'",
+      "sample_language": "We may update this Privacy Policy from time to time. Material changes will be communicated via [email / in-app notification / website banner] before they take effect. Continued use after changes constitutes acceptance."
+    }
+  ]
+}
